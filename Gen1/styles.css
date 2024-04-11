@@ -1,0 +1,52 @@
+*, body, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.container span {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    margin-left: 8px;
+    border-radius: 50%;
+    animation: loader 2.5s linear infinite;
+}
+
+.container span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.container span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.container span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.container span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+.container span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+@keyframes loader {
+    0%, 100% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
